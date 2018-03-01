@@ -1,0 +1,15 @@
+body {
+background-color: rgb(243, 210, 210);
+}
+
+#sports {
+    display: inline-block;
+}
+p{
+    text-align: right;
+}
+#sports-image {
+    height: 200px;
+    width: 300px;
+    border: 2px solid black;
+}
