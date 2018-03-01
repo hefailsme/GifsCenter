@@ -33,7 +33,7 @@ $(document).ready(function () {
         $("#sports").empty();
         var qTerm = $(this).text()
         // console.log(qTerm)
-        var queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + qTerm + '&api_key=UFdB0LeoIzt9ZxF20upxMU6AEGM8g9tJ&limit=10';
+        var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + qTerm + '&api_key=UFdB0LeoIzt9ZxF20upxMU6AEGM8g9tJ&limit=10';
         // console.log(queryURL)
         $.ajax({
             url: queryURL,
@@ -64,7 +64,7 @@ $(document).ready(function () {
                 // saving the image_original_url property
                 var loopURL = gifLoop;
                 // creating and storing image tag
-                var sportsImage = $('<img id="sports-image" class="col-md-"/>');
+                var sportsImage = $('<img id="sports-image"/>');
                 // setting the sportsImage src attr to imageUrl
                 sportsImage.attr("src", imageURL);
                 // creating an element to have rating displayed

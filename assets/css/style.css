@@ -1,13 +1,21 @@
 body {
-background-color: rgb(243, 210, 210);
+    margin: 10px 20px 10px 20px;
+    background-color: rgb(243, 210, 210);
+}
+
+.container-fluid {
+    display: inline-block;
+    clear: both;
 }
 
 #sports {
-    display: inline-block;
+  float: left;
 }
-p{
-    text-align: right;
+
+h1 {
+    text-align: center;
 }
+
 #sports-image {
     height: 200px;
     width: 300px;
