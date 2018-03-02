@@ -27,7 +27,7 @@ $(document).ready(function () {
         var newSearchTerm = $('#new-search-term').val();
         var newSearchBtn = $('<button class="search-btns">' + newSearchTerm + '</button>')
         btnBox.append(newSearchBtn)
-     })
+    })
     $(document).on('click', '.search-btns', function (event) {
         event.preventDefault()
         $("#sports").empty();
@@ -73,22 +73,22 @@ $(document).ready(function () {
                 $("#sports").append(sportsImage).append(pOne);
                 // display rating in <p> div
             }
-            $('#sports-image').on('click', function (event) {
-                var source = $(this).attr("src")
-                console.log(source)
-                // if (source === sportsImage) {
-                //     $(this).attr("src", $(this).attr(loopURL));
-                //     // $(this).attr("data-state", "animate");
-                //   } else {
-                //     $(this).attr("src", $(this).attr(imageURL));
-                //     // $(this).attr("data-state", "still");
-                //   }
-            })
-
-
+            //click event to make gifs play and pause --- not functional
+            // $('#sports-image').on('click', function (event) {
+            //     // values for click event function
+            //     var source = $(this).attr("src");
+            //     var still = $(this).attr("src", $(this).gifs[i].images["original_still"].url);
+            //     var original = $(this).attr("src", $(this).gifs[i].images["original"].url);
+            //     // if source is still image, give the gif the original attribute --- non functional
+            //     if (source == imageURL) {
+            //         $(this).attr("src", original);
+            //         $(this).attr($(this).gifs[i].images["original"].url)
+            //     // if source is original, stop gif and give it the still attribute --- non functional
+            //     } else {
+            //         $(this).attr("src", still);
+            //         $(this).attr($(this).gifs[i].images["original_still"].url)
+            //     }
+            // })
         });
-
     })
-
-
 });
